@@ -84,22 +84,124 @@ ul {
 .banner {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-end;
   background-image: url(img/max.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 350px;
+  padding: 15px;
+  animation: showBanner 0.8s forwards;
+}
+
+@keyframes showBanner {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.banner img {
+  width: 500px;
 }
 
 h1 {
-  color: #ffffff;
   font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+  animation: showBanner 0.8s forwards;
 }
 
-.banner p {
-  color: #ffffff;
-  font-size: 5rem;
+.drivers-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.drive {
+  display: block;
+  justify-content: space-between;
+  animation: showBanner 0.8s forwards;
+  margin-bottom: 90px;
+}
+
+.driver1 {
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-left: solid 4px #c4c4c4;
+  border-bottom: solid 4px #c4c4c4;
+}
+.driver1:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+  border-left: solid 4px #00d2be;
+  border-bottom: solid 4px #00d2be;
+}
+
+.img-driver1 {
+  display: flex;
+  align-items: flex-end;
+}
+.img-driver1 div {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.imgDriver {
+  width: 220px;
+}
+.text-driver1 {
+  display: flex;
+  color: #000;
+  align-items: center;
+}
+
+h2 {
+  margin-left: 0;
+  width: 100%;
+  color: #000000;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  margin-right: 10px;
+  background: #00d2be;
+}
+
+.driver-question {
+  width: 220px;
+}
+
+.driver-answer {
+  width: 160px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.drive p {
+  font-size: 1.6rem;
 }
