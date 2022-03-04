@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/15c26e1696.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
       rel="stylesheet"
@@ -28,18 +32,18 @@
       </div>
     </header>
     <main>
-      <section class="banner">
+      <section class="banner js-scroll">
         <div class="banner-img">
           <img src="img/nomemax.png" alt="" />
         </div>
       </section>
       <section class="principal-container">
-        <div class="content-tittle">
+        <div class="content-tittle js-scroll">
           <h1>Pilotos</h1>
         </div>
 
         <div class="driver-container">
-          <div class="driver">
+          <div id="lh" class="driver js-scroll">
             <h2>Lewis HAMILTON</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -51,7 +55,7 @@
                 </div>
               </div>
 
-              <div class="driver-text">
+              <div id="lh-text" class="driver-text">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -79,7 +83,7 @@
               </div>
             </div>
           </div>
-          <div class="driver">
+          <div id="gr" class="driver js-scroll">
             <h2>George RUSSEL</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -91,7 +95,7 @@
                 </div>
               </div>
 
-              <div class="driver-text">
+              <div id="gr-text" class="driver-text-close">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -121,7 +125,7 @@
           </div>
         </div>
         <div class="driver-container">
-          <div class="driver">
+          <div id="mv" class="driver js-scroll">
             <h2 class="h2Redbull">Max VERSTAPPEN</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -133,7 +137,7 @@
                 </div>
               </div>
 
-              <div class="driver-text-redbull">
+              <div id="mv-text" class="driver-text-close driver-text-redbull">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -161,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="driver">
+          <div id="ch" class="driver js-scroll">
             <h2 class="h2Redbull">Sergio PEREZ</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -173,7 +177,7 @@
                 </div>
               </div>
 
-              <div class="driver-text-redbull">
+              <div id="ch-text" class="driver-text-close driver-text-redbull">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -203,7 +207,7 @@
           </div>
         </div>
         <div class="driver-container">
-          <div class="driver">
+          <div id="cl" class="driver js-scroll">
             <h2 class="h2Ferrari">Charles LECLERC</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -215,7 +219,7 @@
                 </div>
               </div>
 
-              <div class="driver-text-ferrari">
+              <div id="cl-text" class="driver-text-close driver-text-ferrari">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -243,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="driver">
+          <div id="cs" class="driver js-scroll">
             <h2 class="h2Ferrari">Carlos SAINS</h2>
             <div class="driver-info">
               <div class="drive-img-number">
@@ -255,7 +259,7 @@
                 </div>
               </div>
 
-              <div class="driver-text-ferrari">
+              <nav id="cs-text" class="driver-text-close driver-text-ferrari">
                 <ul class="driver-questions">
                   <li>Team</li>
                   <li>Country</li>
@@ -280,11 +284,598 @@
                   <li>01/09/1994</li>
                   <li>Madrid, Spain</li>
                 </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="ln" class="driver js-scroll">
+            <h2 class="h2Maclaren">Lando NORRIS</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/lnnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/Lnimag.png" alt="" />
+                </div>
               </div>
+
+              <div id="ln-text" class="driver-text-close driver-text-maclaren">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>McLaren</li>
+                  <li>United Kingdom</li>
+                  <li>5</li>
+                  <li>306</li>
+                  <li>60</li>
+                  <li>N/A</li>
+                  <li>2 (x1)</li>
+                  <li>1</li>
+                  <li>13/11/1999</li>
+                  <li>Bristol, England</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="dr" class="driver js-scroll">
+            <h2 class="h2Maclaren">Daniel RICCIARDO</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/drnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/drimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="dr-text" class="driver-text-close driver-text-maclaren">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>McLaren</li>
+                  <li>Australia</li>
+                  <li>32</li>
+                  <li>1274</li>
+                  <li>210</li>
+                  <li>N/A</li>
+                  <li>1 (x8)</li>
+                  <li>1</li>
+                  <li>01/07/1989</li>
+                  <li>Perth, Australia</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="oc" class="driver js-scroll">
+            <h2 class="h2Alpine">Esteban OCON</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/oconnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/oconimage.png" alt="" />
+                </div>
+              </div>
+
+              <div id="oc-text" class="driver-text-close driver-text-alpine">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Alpine</li>
+                  <li>France</li>
+                  <li>2</li>
+                  <li>272</li>
+                  <li>89</li>
+                  <li>N/A</li>
+                  <li>1 (x1)</li>
+                  <li>3</li>
+                  <li>17/09/1996</li>
+                  <li>Évreux, Normandy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="fa" class="driver js-scroll">
+            <h2 class="h2Alpine">Fernando ALONSO</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/fernumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/ferimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="fa-text" class="driver-text-close driver-text-alpine">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Alpine</li>
+                  <li>Spain</li>
+                  <li>98</li>
+                  <li>1980</li>
+                  <li>336</li>
+                  <li>2</li>
+                  <li>1 (x32)</li>
+                  <li>1</li>
+                  <li>29/07/1981</li>
+                  <li>Oviedo, Spain</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="pg" class="driver js-scroll">
+            <h2 class="h2Alpha">Pierre GASLY</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/pierrenumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/pierreimg.png" alt="" />
+                </div>
+              </div>
+
+              <div id="pg-text" class="driver-text-close driver-text-alpha">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>AlphaTauri</li>
+                  <li>France</li>
+                  <li>3</li>
+                  <li>309</li>
+                  <li>86</li>
+                  <li>N/A</li>
+                  <li>1 (x1)</li>
+                  <li>2</li>
+                  <li>07/02/1996</li>
+                  <li>Rouen, France</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="yt" class="driver js-scroll">
+            <h2 class="h2Alpha">Yuki TSUNODA</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/yukinumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/yukiimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="yt-text" class="driver-text-close driver-text-alpha">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>AlphaTauri</li>
+                  <li>Japan</li>
+                  <li>N/A</li>
+                  <li>32</li>
+                  <li>22</li>
+                  <li>N/A</li>
+                  <li>4 (x1)</li>
+                  <li>7</li>
+                  <li>11/05/2000</li>
+                  <li>Sagamihara, Japan</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="ls" class="driver js-scroll">
+            <h2 class="h2Aston">Lance STROLL</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/lsnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/lsimg.png" alt="" />
+                </div>
+              </div>
+
+              <div id="ls-text" class="driver-text-close driver-text-aston">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Aston Martin</li>
+                  <li>Canada</li>
+                  <li>3</li>
+                  <li>176</li>
+                  <li>100</li>
+                  <li>N/A</li>
+                  <li>3(x3)</li>
+                  <li>1</li>
+                  <li>29/10/1998</li>
+                  <li>Montreal, Canada</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="sv" class="driver js-scroll">
+            <h2 class="h2Aston">Sebastian VETTEL</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/svnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/svimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="sv-text" class="driver-text-close driver-text-aston">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Aston Martin</li>
+                  <li>Germany</li>
+                  <li>122</li>
+                  <li>3061</li>
+                  <li>280</li>
+                  <li>4</li>
+                  <li>1(x53)</li>
+                  <li>1</li>
+                  <li>03/07/1987</li>
+                  <li>Heppenheim, Germany</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="al" class="driver js-scroll">
+            <h2 class="h2Willians">Alexander ALBON</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/alnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/alimage.png" alt="" />
+                </div>
+              </div>
+
+              <div id="al-text" class="driver-text-close driver-text-willians">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Williams</li>
+                  <li>Thailand</li>
+                  <li>2</li>
+                  <li>197</li>
+                  <li>38</li>
+                  <li>N/A</li>
+                  <li>3(x2)</li>
+                  <li>4</li>
+                  <li>23/03/1996</li>
+                  <li>London, England</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nl" class="driver js-scroll">
+            <h2 class="h2Willians">Nicholas LATIFI</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/nlnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/nlimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="nl-text" class="driver-text-close driver-text-willians">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Williams</li>
+                  <li>Canada</li>
+                  <li>N/A</li>
+                  <li>7</li>
+                  <li>39</li>
+                  <li>N/A</li>
+                  <li>7(x1)</li>
+                  <li>10</li>
+                  <li>29/06/1995</li>
+                  <li>Montreal, Canada</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="vb" class="driver js-scroll">
+            <h2 class="h2alfa">Valterri BOTTAS</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/vbnumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/vbimage.png" alt="" />
+                </div>
+              </div>
+
+              <div id="vb-text" class="driver-text-close driver-text-alfa">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Alfa Romeo</li>
+                  <li>Finland</li>
+                  <li>67</li>
+                  <li>1738</li>
+                  <li>178</li>
+                  <li>N/A</li>
+                  <li>1(x10)</li>
+                  <li>1</li>
+                  <li>28/08/1989</li>
+                  <li>Nastola, Finland</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="gz" class="driver js-scroll">
+            <h2 class="h2alfa">Guanyu ZHOU</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/gznumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/gzimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="gz-text" class="driver-text-close driver-text-alfa">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Alfa Romeo</li>
+                  <li>China</li>
+                  <li>N/A</li>
+                  <li>0</li>
+                  <li>N/A</li>
+                  <li>N/A</li>
+                  <li>0(x0)</li>
+                  <li>N/A</li>
+                  <li>30/05/1999</li>
+                  <li>Shanghai, China</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="driver-container">
+          <div id="ms" class="driver js-scroll">
+            <h2 class="h2hass">Mick SHUMACHER</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/micknumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/mickimage.png" alt="" />
+                </div>
+              </div>
+
+              <div id="ms-text" class="driver-text-close driver-text-hass">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Haas F1 Team</li>
+                  <li>Germany</li>
+                  <li>N/A</li>
+                  <li>0</li>
+                  <li>22</li>
+                  <li>N/A</li>
+                  <li>12(x1)</li>
+                  <li>14</li>
+                  <li>22/03/1999</li>
+                  <li>Vufflens-l-C, Switzerland</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nm" class="driver js-scroll">
+            <h2 class="h2hass">Nikita MAZEPIN</h2>
+            <div class="driver-info">
+              <div class="drive-img-number">
+                <div class="number-img">
+                  <img src="img/nikinumber.png" alt="" />
+                </div>
+                <div class="driver-img">
+                  <img src="img/nikiimage.png" alt="" />
+                </div>
+              </div>
+
+              <nav id="nm-text" class="driver-text-close driver-text-hass">
+                <ul class="driver-questions">
+                  <li>Team</li>
+                  <li>Country</li>
+                  <li>Podiums</li>
+                  <li>Points</li>
+                  <li>Grands Prix entered</li>
+                  <li>World Championships</li>
+                  <li>Highest race finish</li>
+                  <li>Highest grid position</li>
+                  <li>Date of birth</li>
+                  <li>Place of birth</li>
+                </ul>
+                <ul class="driver-answer">
+                  <li>Haas F1 Team</li>
+                  <li>Russia</li>
+                  <li>N/A</li>
+                  <li>0</li>
+                  <li>21</li>
+                  <li>N/A</li>
+                  <li>14(x1)</li>
+                  <li>15</li>
+                  <li>02/03/1999</li>
+                  <li>Moscow, Russia</li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <h3>
+        Desenvolvimento | <br />
+        Fernando Mercado
+      </h3>
+      <a href="https://github.com/fermercado" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/fer-mercado/" target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

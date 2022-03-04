@@ -66,7 +66,6 @@ ul {
   width: 90%;
   margin: auto;
   padding-top: 40px;
-  height: 100vh;
 }
 
 @keyframes showHeader {
@@ -115,7 +114,7 @@ h1 {
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 3px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   animation: showBanner 0.8s forwards;
 }
 
@@ -141,20 +140,16 @@ h2 {
   justify-content: space-around;
   margin: auto;
   gap: 30px;
-  margin-top: 60px;
+  margin-bottom: 70px;
 }
 
 .driver {
   max-width: 500px;
   width: 100%;
-  border-bottom-left-radius: 18px;
+  border-radius: 10px;
   margin: auto;
-
   box-shadow: -15px 10px 15px #00000025;
-}
-.driver:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
+  background-color: #fff;
 }
 
 .driver-info {
@@ -165,6 +160,7 @@ h2 {
 .drive-img-number {
   background-image: url(img/Screenshot_1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
   border-radius: 8px;
@@ -189,8 +185,15 @@ h2 {
 .driver-text {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  border-radius: 15px;
+  gap: 10px;
+  border-radius: 18px;
+  border: solid 4px #00d2be;
+}
+.driver-text-close {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 18px;
   border: solid 4px #00d2be;
 }
 
@@ -226,10 +229,10 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid 4px #0600ef;
 }
-/*Ferraro*/
+/*Ferrari*/
 
 .h2Ferrari {
   background-color: #dc0000;
@@ -238,12 +241,159 @@ h2 {
 .driver-text-ferrari {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   border-radius: 15px;
   border: solid 4px #dc0000;
 }
+/*Maclaren*/
+
+.h2Maclaren {
+  background-color: #ff9800;
+}
+
+.driver-text-maclaren {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #ff9800;
+}
+/*alpine*/
+
+.h2Alpine {
+  background-color: #0090ff;
+}
+
+.driver-text-alpine {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #0090ff;
+}
+/*alphaTauri*/
+
+.h2Alpha {
+  background-color: #2b4562;
+}
+
+.driver-text-alpha {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #2b4562;
+}
+/*AstonMartin*/
+
+.h2Aston {
+  background-color: #006f62;
+}
+
+.driver-text-aston {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #006f62;
+}
+/*Williams*/
+
+.h2Willians {
+  background-color: #005aff;
+}
+
+.driver-text-willians {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #005aff;
+}
+/*AlfaRomeo*/
+
+.h2alfa {
+  background-color: #900000;
+}
+
+.driver-text-alfa {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #900000;
+}
+/*Hass*/
+
+.h2hass {
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 4px #000000;
+}
+
+.driver-text-hass {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: solid 4px #000000;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate3d(0, 80px, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 0.6s;
+  transform: translate3d(0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  padding: 10x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ff0000;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 4rem;
+  padding-left: 20px;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 20px 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 @media (max-width: 1024px) {
+  .driver-questions {
+    padding-right: 10px;
+  }
+
+  .driver-questions li {
+    font-size: 1.2rem;
+  }
+
+  .driver-answer li {
+    font-size: 1.2rem;
+  }
   .driver {
     max-width: 400px;
   }
@@ -257,8 +407,16 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .header-content img {
+    width: 100px;
+  }
+  .header-content a {
+    font-size: 1.4rem;
+  }
   .driver {
     max-width: 400px;
+    position: relative;
+    cursor: pointer;
   }
   .number-img img {
     width: 150px;
@@ -267,9 +425,48 @@ h2 {
   .driver-img img {
     width: 180px;
   }
+
   .driver-container {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
+  }
+  .ativo-driver-open {
+    display: none;
+  }
+
+  .driver-text {
+    animation: slideDown 0.8s forwards;
+    position: relative;
+    z-index: -1;
+    border-radius: 8px;
+  }
+
+  .driver-text-close.ativo-driver-close {
+    display: flex;
+  }
+  .driver-text-close {
+    display: none;
+    animation: slideDown 0.6s forwards;
+    position: relative;
+    z-index: -1;
+    border-radius: 8px;
+  }
+
+  .driver-info {
+    overflow-y: hidden;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -50px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 }
 
@@ -280,6 +477,12 @@ h2 {
 }
 
 @media (max-width: 425px) {
+  .header-content img {
+    width: 70px;
+  }
+  .header-content a {
+    font-size: 1rem;
+  }
   h1 {
     font-size: 3rem;
   }
@@ -289,6 +492,10 @@ h2 {
   }
   .banner img {
     width: 280px;
+  }
+
+  .banner {
+    height: 280px;
   }
   .driver {
     max-width: 350px;
@@ -320,5 +527,23 @@ h2 {
 
   .driver-answer li {
     font-size: 1rem;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer a {
+    color: #ffffff;
+    font-size: 3rem;
+    padding-left: 15px;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 }
