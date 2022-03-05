@@ -14,13 +14,19 @@ body {
   background-color: #fff;
 }
 
+main {
+  padding-top: 90px;
+}
+
 .header-container {
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 20px #a3a3a3;
   animation: showHeader 0.8s forwards;
-  margin-bottom: 20px;
-  overflow: hidden;
 }
 
 .header-content {
@@ -118,7 +124,6 @@ h1 {
   font-weight: 400;
   letter-spacing: 3px;
   padding-bottom: 30px;
-  animation: showBanner 0.8s forwards;
 }
 
 h2 {
@@ -356,7 +361,6 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 10x;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +383,7 @@ h3 {
   text-align: center;
   color: #fff;
   font-size: 1.8rem;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -484,7 +488,11 @@ h3 {
     width: 70px;
   }
   .header-content a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .header-container li {
+    margin-left: 10px;
   }
   h1 {
     font-size: 3rem;

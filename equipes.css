@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Secular One', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fff;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.header-container {
+  position: fixed;
+  overflow: hidden;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #a3a3a3;
+  animation: showHeader 0.8s forwards;
+}
+
+.header-content {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.header-content img {
+  width: 150px;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.header-content nav,
+ul {
+  display: flex;
+}
+
+.header-content li {
+  margin-left: 30px;
+}
+
+.header-content a {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header-content li:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+
+.header-content a:hover {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.principal-container {
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+@keyframes showHeader {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  background-color: #00d2be;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  column-gap: 50px;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+.team-container {
+  max-width: 550px;
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: -15px 10px 15px #00000025;
+}
+
+.team-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #00d2be;
+  margin-bottom: 10px;
+  padding: 25px 0;
+  background-color: #fff;
+}
+.team-logo img {
+  width: 55%;
+}
+
+.team-driver {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0;
+}
+
+h4 {
+  text-align: center;
+  padding: 0 0 0 5px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 p {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.driver-name {
+  width: 40%;
+  border-left: solid 4px #00d2be;
+  border-bottom: solid 4px #00d2be;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car {
+  margin-top: 20px;
+  background-image: url(img/Screenshot_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  border: solid 4px #00d2be;
+}
+.team-car img {
+  width: 110%;
+  padding: 40px;
+}
+
+/*REDBULL*/
+
+.h2redbull {
+  background-color: #0600ef;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-redbull {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #0600ef;
+  margin-bottom: 10px;
+  padding: 40px 0;
+  background-color: #fff;
+}
+.team-logo-redbull img {
+  width: 45%;
+}
+
+.driver-name-redbull {
+  width: 40%;
+  border-left: solid 4px #0600ef;
+  border-bottom: solid 4px #0600ef;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-redbull {
+  border: solid 4px #0600ef;
+}
+/*FERRARI*/
+
+.h2ferrari {
+  background-color: #dc0000;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-ferrari {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #dc0000;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-ferrari img {
+  width: 60%;
+}
+
+.driver-name-ferrari {
+  width: 40%;
+  border-left: solid 4px #dc0000;
+  border-bottom: solid 4px #dc0000;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-ferrari {
+  border: solid 4px #dc0000;
+}
+/*maclaren*/
+
+.h2mclaren {
+  background-color: #ff9800;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-mclaren {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #ff9800;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-mclaren img {
+  width: 60%;
+}
+
+.driver-name-mclaren {
+  width: 40%;
+  border-left: solid 4px #ff9800;
+  border-bottom: solid 4px #ff9800;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-mclaren {
+  border: solid 4px #ff9800;
+}
+/*astonmartin*/
+
+.h2aston {
+  background-color: #006f62;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-aston {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #006f62;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-aston img {
+  width: 60%;
+}
+
+.driver-name-aston {
+  width: 40%;
+  border-left: solid 4px #006f62;
+  border-bottom: solid 4px #006f62;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-aston {
+  border: solid 4px #006f62;
+}
+/*ALPINE*/
+
+.h2alpine {
+  background-color: #0090ff;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-alpine {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #0090ff;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-alpine img {
+  width: 60%;
+}
+
+.driver-name-alpine {
+  width: 40%;
+  border-left: solid 4px #0090ff;
+  border-bottom: solid 4px #0090ff;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-alpine {
+  border: solid 4px #0090ff;
+}
+/*AlphaTauri*/
+
+.h2alpha {
+  background-color: #2b4562;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-alpha {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #2b4562;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-alpha img {
+  width: 60%;
+}
+
+.driver-name-alpha {
+  width: 40%;
+  border-left: solid 4px #2b4562;
+  border-bottom: solid 4px #2b4562;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-alpha {
+  border: solid 4px #2b4562;
+}
+/*Alfaromeo*/
+
+.h2alfa {
+  background-color: #900000;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-alfa {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #900000;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-alfa img {
+  width: 60%;
+}
+
+.driver-name-alfa {
+  width: 40%;
+  border-left: solid 4px #900000;
+  border-bottom: solid 4px #900000;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-alfa {
+  border: solid 4px #900000;
+}
+/*williams*/
+
+.h2will {
+  background-color: #005aff;
+  margin-left: 0;
+  width: 100%;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team-logo-will {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #005aff;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-will img {
+  width: 60%;
+}
+
+.driver-name-will {
+  width: 40%;
+  border-left: solid 4px #005aff;
+  border-bottom: solid 4px #005aff;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-will {
+  border: solid 4px #005aff;
+}
+/*hass*/
+
+.h2hass {
+  background-color: #ffffff;
+  margin-left: 0;
+  width: 100%;
+  color: #000;
+  letter-spacing: 3px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border: solid 4px #000;
+}
+
+.team-logo-hass {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 18px;
+  border: solid 4px #000;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.team-logo-hass img {
+  width: 60%;
+}
+
+.driver-name-hass {
+  width: 40%;
+  border-left: solid 4px #000;
+  border-bottom: solid 4px #000;
+  border-bottom-left-radius: 18px;
+}
+
+.team-car-hass {
+  border: solid 4px #000;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate3d(0, 80px, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transition: 0.6s;
+  transform: translate3d(0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ff0000;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 4rem;
+  padding-left: 20px;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 10px 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .team {
+    column-gap: 40px;
+  }
+  .team-container {
+    max-width: 400px;
+  }
+
+  .team-logo {
+    padding: 30px 0;
+  }
+
+  .team-logo-will {
+    padding: 24px 0;
+  }
+  .team-driver {
+    padding: 8px 0;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h4 p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h4 {
+    margin-top: 12px;
+  }
+  .header-content img {
+    width: 100px;
+  }
+  .header-content a {
+    font-size: 1.4rem;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .team-container {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .team-logo {
+    margin-bottom: 0;
+  }
+
+  .team-logo-will {
+    margin-bottom: 0;
+  }
+  .team-logo-hass {
+    margin-bottom: 0;
+  }
+  .team-logo-alfa {
+    margin-bottom: 0;
+  }
+  .team-driver {
+    margin-bottom: 0;
+  }
+  .team-logo-alpha {
+    margin-bottom: 0;
+  }
+
+  .team-logo-alpine {
+    margin-bottom: 0;
+  }
+
+  .team-logo-aston {
+    margin-bottom: 0;
+  }
+
+  .team-logo-mclaren {
+    margin-bottom: 0;
+  }
+  .team-logo-ferrari {
+    margin-bottom: 0;
+  }
+
+  .team-logo-redbull {
+    margin-bottom: 0;
+  }
+  .ativo-driver-open {
+    display: none;
+  }
+
+  .driver-text {
+    animation: slideDown 0.8s forwards;
+    position: relative;
+    z-index: -999;
+    border-radius: 8px;
+  }
+
+  .driver-text-close.ativo-driver-close {
+    display: block;
+  }
+  .driver-text-close {
+    display: none;
+    animation: slideDown 0.6s forwards;
+    position: relative;
+    z-index: -1;
+    border-radius: 8px;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -50px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+@media (max-width: 570px) {
+}
+
+@media (max-width: 425px) {
+  .header-content img {
+    width: 70px;
+  }
+  .header-content a {
+    font-size: 1rem;
+  }
+
+  .header-container li {
+    margin-left: 10px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  .team-logo {
+    padding: 5px 0;
+  }
+
+  .team-logo-will {
+    padding: 0 0;
+  }
+  .team-logo-hass {
+    padding: 0 0;
+  }
+  .team-logo-alfa {
+    padding: 0 0;
+  }
+  .team-driver {
+    padding: 8px 0;
+  }
+  .team-logo-alpha {
+    padding: 2px 0;
+  }
+
+  .team-logo-alpine {
+    padding: 0 0;
+  }
+
+  .team-logo-aston {
+    padding: 0 0;
+  }
+
+  .team-logo-mclaren {
+    padding: 0 0;
+  }
+  .team-logo-ferrari {
+    padding: 2px 0;
+  }
+
+  .team-logo-redbull {
+    padding: 10px 0;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h4 p {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer a {
+    color: #ffffff;
+    font-size: 3rem;
+    padding-left: 15px;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
