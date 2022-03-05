@@ -669,6 +669,7 @@ h3 {
   .team-container {
     margin: auto;
     margin-bottom: 60px;
+    cursor: pointer;
   }
   .team-logo {
     margin-bottom: 0;
