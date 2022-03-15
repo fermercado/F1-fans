@@ -615,8 +615,8 @@ footer a:hover {
 h3 {
   text-align: center;
   color: #fff;
-  font-size: 1.8rem;
-  padding: 10px 0;
+  font-size: 1.4rem;
+  padding: 15px 0;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -752,14 +752,11 @@ h3 {
     width: 70px;
   }
   .header-content a {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .header-container li {
-    margin-left: 10px;
-  }
-  h1 {
-    font-size: 3rem;
+    margin-left: 8px;
   }
   h1 {
     font-size: 3rem;
@@ -813,7 +810,7 @@ h3 {
   }
 
   footer {
-    padding: 10px;
+    padding: 5px;
   }
   footer a {
     color: #ffffff;
@@ -824,7 +821,7 @@ h3 {
   h3 {
     color: #fff;
     font-size: 1.2rem;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 2px;
